@@ -154,5 +154,5 @@ Registration
 Login
 Project creation
 Task update
-Comments addition
+Comment addition
 
