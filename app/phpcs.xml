@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="Laravel Standards">
+    <description>Project coding standards for Laravel 12</description>
+
+    <!-- Scan these directories -->
+    <file>app</file>
+    <file>routes</file>
+    <file>database</file>
+
+    <!-- Exclude some auto-generated stuff -->
+    <exclude-pattern>vendor/</exclude-pattern>
+    <exclude-pattern>storage/</exclude-pattern>
+    <exclude-pattern>bootstrap/</exclude-pattern>
+
+    <!-- Base standard -->
+    <rule ref="PSR12"/>
+
+    <!-- Extra: disallow short PHP tags -->
+    <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+
+    <!-- Extra: enforce strict comparisons -->
+    <rule ref="Squiz.Operators.ComparisonOperatorUsage"/>
+</ruleset>
